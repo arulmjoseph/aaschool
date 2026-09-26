@@ -1176,43 +1176,41 @@
   <!-- HERO SECTION: Full-Bleed Video Backdrop with Bottom-Left Alignment -->
   <section class="relative min-h-[85vh] lg:min-h-screen flex items-end justify-start overflow-hidden bg-slateDark">
     
-    <!-- Hero Video Background -->
-    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-60">
+    <!-- Hero Video Background (z-0, 100% Opacity Visibility) -->
+    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-100">
       <source src="https://asd.sch.qa/sites/default/files/video-thumbnails/2025-07/home-banner-video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
-    <!-- Overlay Gradient -->
-    <div class="absolute inset-0 hero-overlay"></div>
+    <!-- Contrast Gradient Overlay for Text Readability (z-1) -->
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/45 to-slate-950/20 z-1 pointer-events-none"></div>
 
+    <!-- Bottom Gradient Blend Transition into Next Section BG #e2e8f0 (z-2) -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 sm:h-36 bg-gradient-to-b from-transparent to-[#e2e8f0] z-2 pointer-events-none"></div>
 
-
-    <!-- Hero Main Content (Bottom Left Aligned with Bottom Padding) -->
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 text-left text-white pb-20 sm:pb-28 pt-32">
+    <!-- Hero Main Content (z-20 - Strict Top Priority Above Overlays) -->
+    <div class="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 text-left text-white pb-20 sm:pb-28 pt-32">
       
       <!-- Main Headline (Smooth Slide-Up Animation from Bottom) -->
       <h1 class="hero-title-anim font-reem text-4xl sm:text-6xl md:text-7xl font-semibold leading-[1.15] tracking-tight mb-4 max-w-4xl">
         <span class="text-white drop-shadow-lg">EMPOWERING LEADERS.</span><br>
-        <span class="text-[#d32f2f] sm:text-[#e53935] drop-shadow-md">
+        <span class="text-[#ef5350] sm:text-[#f87171] drop-shadow-md">
           INSPIRING EXCELLENCE.
         </span>
       </h1>
 
-      <!-- Description Paragraph (Dark Crisp Slate Color with Smooth Staggered Slide-Up Animation) -->
-      <p class="hero-desc-anim text-slate-700 sm:text-slate-800 text-lg sm:text-xl font-medium max-w-2xl leading-relaxed">
+      <!-- Description Paragraph (Crisp Legible Text with Smooth Staggered Slide-Up Animation) -->
+      <p class="hero-desc-anim text-slate-100 sm:text-slate-200 text-lg sm:text-xl font-normal max-w-2xl leading-relaxed drop-shadow-md">
         Providing the US Common Core Curriculum Standards within a vibrant, multicultural learning environment in Qatar since 2000.
       </p>
 
     </div>
 
-    <!-- Scroll Down Indicator -->
-    <a href="#stats" class="absolute bottom-6 right-12 z-20 text-slate-700 hover:text-brandRed transition-colors flex items-center space-x-2 animate-bounce" aria-label="Scroll Down">
+    <!-- Scroll Down Indicator (z-30) -->
+    <a href="#stats" class="absolute bottom-6 right-12 z-30 text-white hover:text-brandRed transition-colors flex items-center space-x-2 animate-bounce" aria-label="Scroll Down">
       <span class="text-xs uppercase tracking-widest font-semibold">Scroll</span>
       <i class="fa-solid fa-chevron-down text-xs"></i>
     </a>
-
-    <!-- Bottom Smooth Linear Gradient Blend into Next Section BG Color (#e2e8f0) -->
-    <div class="absolute bottom-0 left-0 right-0 h-52 sm:h-72 lg:h-96 bg-gradient-to-b from-transparent via-[#e2e8f0]/40 to-[#e2e8f0] pointer-events-none z-10"></div>
   </section>
 
   <!-- COMBINED STATS BANNER & STEM INNOVATION SECTION (Soft Gray to White Gradient Blend) -->
