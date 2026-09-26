@@ -128,7 +128,7 @@
 
     /* Video Overlay Gradient */
     .hero-overlay {
-      background: transparent;
+      background: linear-gradient(180deg, rgba(6, 16, 38, 0.45) 0%, rgba(6, 16, 38, 0.55) 60%, rgba(6, 16, 38, 0.85) 100%);
     }
 
     .academic-card {
@@ -1185,10 +1185,17 @@
     </div>
 
     <!-- Scroll Down Indicator -->
-    <a href="#stats" class="absolute bottom-6 right-12 z-10 text-slate-300 hover:text-brandRed transition-colors flex items-center space-x-2 animate-bounce" aria-label="Scroll Down">
+    <a href="#stats" class="absolute bottom-16 right-12 z-20 text-slate-300 hover:text-brandRed transition-colors flex items-center space-x-2 animate-bounce" aria-label="Scroll Down">
       <span class="text-xs uppercase tracking-widest font-medium">Scroll</span>
       <i class="fa-solid fa-chevron-down text-xs"></i>
     </a>
+
+    <!-- Bottom Curved Mask Divider (Blends Hero Video into Next Section) -->
+    <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
+      <svg class="relative block w-full h-[45px] sm:h-[75px] lg:h-[110px]" viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 Q720,120 1440,40 L1440,120 L0,120 Z" fill="#e2e8f0"></path>
+      </svg>
+    </div>
   </section>
 
   <!-- COMBINED STATS BANNER & STEM INNOVATION SECTION (Soft Gray to White Gradient Blend) -->
